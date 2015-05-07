@@ -1,3 +1,10 @@
+Meteor.startup(function() {
+   $('html').attr('dir', 'rtl').find("body").addClass("right-to-left");
+   $('html').attr('lang', 'ar');
+});
+
+
+
 // Session variables
 Session.set('postsLimit', Settings.get('postsPerPage', 10));
 
@@ -15,7 +22,7 @@ Meteor.startup(function () {
 // AutoForm.debug();
 
 Meteor.startup(function() {
-
+  
   var seoProperties = {
     meta: {},
     og: {}

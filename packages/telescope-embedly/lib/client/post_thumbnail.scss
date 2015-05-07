@@ -8,7 +8,7 @@ $small-break: 600px;
 .posts-list .post-thumbnail{
   flex-grow: 0;
   flex-shrink: 0;
-  margin-right: 10px;
+  margin-left: 10px;
   @include small {
     margin: 0 0 0 10px;
     float: right;

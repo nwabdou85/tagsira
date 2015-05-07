@@ -1,9 +1,10 @@
 Meteor.startup(function () {
   Template[getTemplate('postShare')].helpers({
     sourceLink: function(){
-      return !!this.url ? this.url : getSiteUrl() + "posts/"+this._id;
+
+      return window.location.origin + "/posts/" + this._id;
     },
-    viaTwitter: function () {
+    viaTwitter: function () { 
       return !!Settings.get('twitterAccount') ? 'via='+Settings.get('twitterAccount') : '';
     }
   });

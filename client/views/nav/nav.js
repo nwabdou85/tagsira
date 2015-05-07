@@ -16,16 +16,16 @@ Template[getTemplate('nav')].helpers({
     return headerClass;
   },
   primaryNav: function () {
-    return _.sortBy(primaryNav, 'order');
-  },
-  hasPrimaryNav: function () {
-    return !!primaryNav.length;
-  },
-  secondaryNav: function () {
     return _.sortBy(secondaryNav, 'order');
   },
-  hasSecondaryNav: function () {
+  hasPrimaryNav: function () {
     return !!secondaryNav.length;
+  },
+  secondaryNav: function () {
+    return _.sortBy(primaryNav, 'order');
+  },
+  hasSecondaryNav: function () {
+    return !!primaryNav.length;
   },
   dropdownClass: function () {
     var dropdownClass = "";

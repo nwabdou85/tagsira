@@ -8,7 +8,7 @@ Meteor.startup(function() {
     if (title) {
       props.og.title = title;
     }
-    if (description) {
+    if (description) { 
       props.meta.description = description;
       props.og.description = description;
     }
